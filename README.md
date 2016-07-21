@@ -14,3 +14,17 @@ If you install java chrome and firefox over the composer, you get the password q
 normaly it should be work :)
 
 you find all downloaded under files path\to\seleniumComposer\resources\app\thirdparty
+
+
+Usage:
+
+Get Driver
+
+optional
+get java
+get chrome
+get firefox
+
+
+last:
+start All
