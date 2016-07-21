@@ -19,19 +19,17 @@ function initialize () {
 
   function createWindow () {
     var windowOptions = {
-      width: 1000,  
-      minWidth: 680,
+      width: 1000,
       height: 1040,
       title: app.getName(),
       webPreferences: {
         nodeIntegration: true,
-        webSecurity: true,
+        webSecurity: false,
         preload: path.resolve(path.join(__dirname, 'assets/js/preload.js'))
       },
     };
     mainWindow = new BrowserWindow(windowOptions);
     mainWindow.loadURL(path.join('file://', __dirname, '/index.html'));
-    mainWindow.webContents.openDevTools();
     mainWindow.on('closed', function () {
       mainWindow = null
     })
