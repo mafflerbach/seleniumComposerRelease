@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "browserName": "MicrosoftEdge",
+      "maxInstances": 10,
+      "seleniumProtocol": "WebDriver"
+    }
+  ],
+  "configuration": {
+    "port": 5558,
+    "hubPort": 4444,
+    "hubHost": "localhost",
+    "register": true,
+    "maxSession": 10,
+    "cleanUpCycle": 2000,
+    "nodeTimeout":120,
+    "timeout": 30
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "capabilities": [
+    {
+      "browserName": "firefox",
+      "maxInstances": 10,
+      "seleniumProtocol": "WebDriver",
+      "version": "ANY"
+    }
+  ],
+  "configuration": {
+    "port": 5556,
+    "hubPort": 4444,
+    "hubHost": "localhost",
+    "register": true,
+    "maxSession": 10,
+    "cleanUpCycle": 2000,
+    "nodeTimeout":120,
+    "timeout": 30
+  }
+}

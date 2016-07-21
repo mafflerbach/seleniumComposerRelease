@@ -1,0 +1,25 @@
+<template class="task-template">
+
+  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar">
+      <a href="#terminal-panel" class="mdl-tabs__tab is-active">Terminal</a>
+      <a href="#grid-panel" class="mdl-tabs__tab">Grid console</a>
+    </div>
+    <div class="mdl-tabs__panel is-active" id="terminal-panel">
+      <div id="terminal-window">
+        <div id="terminal-body">
+          <div id="terminal-content"></div>
+          <div class="cursor"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-tabs__panel" id="grid-panel">
+      <iframe src="" style="width:100%; height:400px" id="selenium-console"></iframe>
+    </div>
+
+    <button class="mdl-button mdl-js-button mdl-button--raised" data-command="clrs">
+      clear Terminal
+    </button>
+  </div>
+
+</template>

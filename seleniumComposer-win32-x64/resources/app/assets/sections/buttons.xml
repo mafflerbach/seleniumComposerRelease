@@ -1,0 +1,40 @@
+<template class="task-template">
+
+
+  <div id="buttonsProvider"></div>
+
+
+
+  <script type="text/javascript">
+    var button = new buttonProvider();
+    buttons = button.getButtons();
+
+    for(var i = 0; i < buttons.length; i++) {
+      $('#buttonsProvider').append(buttons[i]);
+    }
+
+  </script>
+
+  <hr/>
+
+  <button class="mdl-button mdl-js-button mdl-button--raised" data-driver="all">
+    get Driver
+  </button>
+
+  <button class="mdl-button mdl-js-button mdl-button--raised" data-installer="java">
+    get Java
+  </button>
+  <button class="mdl-button mdl-js-button mdl-button--raised" data-installer="chrome">
+    get chrome
+  </button>
+  <button class="mdl-button mdl-js-button mdl-button--raised" data-installer="firefox">
+    get Firefox
+  </button>
+
+  <script type="text/javascript">
+
+
+  </script>
+
+
+</template>
